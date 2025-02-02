@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 page3.appendChild(snoopyGif);
             }
         } else {
-            alert('Only Laos is available!');
+            alert('Erm, try again');
         }
     }
 
