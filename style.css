@@ -6,8 +6,8 @@ body {
 }
 
 .image-container img {
-    max-width: 25%;
-    height: 25%;
+    max-width: 5%;
+    height: auto;
 }
 
 button {
