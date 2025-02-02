@@ -25,15 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } else {
             // Display laughing Snoopy GIF for Japanese or Italian
-            const laughingGif = document.createElement('img');
-            laughingGif.src = 'laughing-hysterically.gif';
-            laughingGif.alt = 'Laughing Snoopy';
-            laughingGif.style.maxWidth = '300px';
-            laughingGif.style.marginTop = '20px';
+            let laughingGif = page2.querySelector('img[src="laughing-hysterically.gif"]');
 
-            // Clear any existing content and add the laughing GIF to page2
-            page2.innerHTML = '<h1>Where would you like to eat?</h1>';
-            page2.appendChild(laughingGif);
+            if (!laughingGif) {
+                laughingGif = document.createElement('img');
+                laughingGif.src = 'laughing-hysterically.gif';
+                laughingGif.alt = 'Laughing Snoopy';
+                laughingGif.style.maxWidth = '300px';
+                laughingGif.style.marginTop = '20px';
+                page2.appendChild(laughingGif);
+            }
         }
     }
 
