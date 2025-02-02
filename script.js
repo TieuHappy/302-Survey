@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             snoopyGif.style.maxWidth = '300px';
             snoopyGif.style.marginTop = '20px';
 
-            if (!page3.querySelector('img')) {
+            if (!page3.querySelector('img[src="yippee-jumping-snoopy-hc1gv8bjpmjx9knn.gif"]')) {
                 page3.appendChild(snoopyGif);
             }
         } else {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             laughingGif.style.maxWidth = '300px';
             laughingGif.style.marginTop = '20px';
 
-            // Clear any existing GIFs in page2 and add the laughing GIF
+            // Clear any existing content and add the laughing GIF to page2
             page2.innerHTML = '<h1>Where would you like to eat?</h1>';
             page2.appendChild(laughingGif);
         }
