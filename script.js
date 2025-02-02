@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             page2.classList.add('hidden');
             page3.classList.remove('hidden');
 
-            // Ensure the Snoopy GIF is visible
+            // Ensure the Snoopy GIF is visible for Laos
             const snoopyGif = document.createElement('img');
             snoopyGif.src = 'yippee-jumping-snoopy-hc1gv8bjpmjx9knn.gif';
             snoopyGif.alt = 'Snoopy Jumping';
@@ -24,7 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 page3.appendChild(snoopyGif);
             }
         } else {
-            alert('Erm, try again');
+            // Display laughing Snoopy GIF for Japanese or Italian
+            const laughingGif = document.createElement('img');
+            laughingGif.src = 'laughing-hysterically.gif';
+            laughingGif.alt = 'Laughing Snoopy';
+            laughingGif.style.maxWidth = '300px';
+            laughingGif.style.marginTop = '20px';
+
+            // Clear any existing GIFs in page2 and add the laughing GIF
+            page2.innerHTML = '<h1>Where would you like to eat?</h1>';
+            page2.appendChild(laughingGif);
         }
     }
 
